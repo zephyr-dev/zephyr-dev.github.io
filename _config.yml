@@ -3,7 +3,7 @@ title: Gust Tech Blog
 email: your-email@domain.com
 description: Gust is a platform that connects early stage entrepreneurs and angel investors.  This is the blog of the developers who work on builiding the platform
 baseurl: ""
-url: "http://yourdomain.com"
+url: "http://gust.com"
 
 # Build settings
 markdown: kramdown
