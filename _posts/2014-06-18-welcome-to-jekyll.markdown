@@ -1,5 +1,6 @@
 ---
 layout: post
+author: "Matt Ross"
 title:  "Welcome to Jekyll!"
 date:   2014-06-18 09:46:39
 categories: jekyll update

@@ -5,16 +5,25 @@ layout: default
 <div class="home">
 
   <h1>Posts</h1>
-
   <ul class="posts">
     {% for post in site.posts %}
       <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <div class="post-container">
+        <span class="post-date text-right">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <div class="post-content">
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        
+        {{post.content| split:'<!--break-->' | first }}
+        {% if post.content contains '<!--break-->' %}
+          <a href="{{post.url}}"> read more</a>
+        {% endif %}
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_sharing_toolbox"></div>
+      </div>
+  </div>
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

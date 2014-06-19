@@ -4,6 +4,8 @@ email: your-email@domain.com
 description: Gust is a platform that connects early stage entrepreneurs and angel investors.  This is the blog of the developers who work on builiding the platform
 baseurl: ""
 url: "http://gust.com"
+paginate: 2
+highlighter: pygments
 
 # Build settings
 markdown: kramdown
