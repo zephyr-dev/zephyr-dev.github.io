@@ -3,6 +3,7 @@ layout: post
 title:  "Lots of text"
 date:   2014-06-18 09:46:39
 categories: jekyll update
+tags: text data
 ---
 
 Testing Readability with a Bunch of Text

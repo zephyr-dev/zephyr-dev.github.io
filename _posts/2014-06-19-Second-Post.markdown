@@ -4,6 +4,7 @@ title:  "Codez"
 author: "Matt Ross"
 date:   2014-06-18 09:46:39
 categories: jekyll update
+tags: code data 
 ---
 
 <h3>Algorithm is a cool word isnt it </h3>

@@ -3,8 +3,9 @@ layout: post
 title:  "Big Data"
 date:   2014-06-20 11:24:39
 categories: jekyll update
+category: Data
+tags: Data
 ---
-
 Big Data is it good?
 
 Sure does sound cool.

@@ -5,26 +5,48 @@
 
 }
 
+.info{
+  margin-top 10px;
+  background-color: #fff;
+  height: 400px;
+  border: 1px solid #e6e6e6;
+}
+
 .post-content{
   padding: 15px;
+  border-top: 1px solid #0c8caa;
 }
 .post-date{
-  background-color: rgba(236,247,255,0.5);
   width: 100px;
   font-size; 20px;
+  float: right;
 }
 
 .post-container{
   background-color: #fff;
   padding: 10px;
   padding-bottom: 10px;
-  margin-bottom: 20px;
+  margin: 20px;
   border: 1px solid #e6e6e6;
 }
 .sidebar{
+  margin-bottom: 10px;
   background-color: #fff;
   margin-top: -30px;
+  border: 1px solid #e6e6e6;
 }
+
+.post-content{
+  padding: 15px;
+  border-top: 1px solid #0c8caa;
+}
+.post-date{
+  width: 100px;
+  font-size; 20px;
+  float: right;
+}
+
+
 .site-name{
   text-decoration: none;
   color: #fff;
@@ -242,6 +264,10 @@ a:visited { color: #205caa; }
 
 /* Post styles */
 /* ----------------------------------------------------------*/
+.post{
+  /* border-top: 1px solid #0c8caa;; */
+padding: 20px;
+}
 
 .post-header { margin: 10px 0 30px; }
 

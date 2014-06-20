@@ -4,7 +4,7 @@
   <div class="navbar navbar-inverse navbar--level-zero">
     <div class="container">
       <a href= "https://www.gust.com">
-        <img class="navbar-brand logo" src="https://zephyr-integration.herokuapp.com/assets/newlogo-3f6fb706a98978008d786812b989eab8.png"> 
+        <img class="navbar-brand logo" src="https://zephyr-integration.herokuapp.com/assets/newlogo-3f6fb706a98978008d786812b989eab8.png">
       </a>
       <h3 class="site-name"><a style="color: #bfbfbf;" href="{{ site.baseurl }}/">Gust Tech Blog</a></h3>
     </div>
@@ -15,43 +15,18 @@
 
 <body>
 
-<!-- {% include header.html %} -->
+  <!-- {% include header.html %} -->
 
 
-<div class="container">
-  <div class="row" id="main">
-
-    <div class="">
-
-    </div>
-
-    <div class=" wrap col-md-8"> 
-
-
-      {{content}}
-    </div>
-    <div class="col-md-3 sidebar">
-      <h1>Posts</h1>
-      <ul class="posts">
-        {% for post in site.posts %}
-
-        <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        </li>
-        <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        {% if post.author %} - {{post.author }}{% endif %}</li>
-        {% endfor %}
-      </ul>
-
-
+    <div class="container">
+      <div class="row" id="main">
+        <div class=" wrap col-md-8">
+          {{content}}
+        </div>
+        <div class="col-md-3">
+          {% include sidebar %}
+        </div>
     </div>
   </div>
-
-
-
-  <div id="foot navbar-fixed-bottom" >
-    {% include footer.html %}
-  </div>
-</div>
 </body>
 </html>
