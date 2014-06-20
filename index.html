@@ -2,20 +2,22 @@
 layout: default
 ---
 
-<div class="home">
-  <h1>Posts</h1>
+  <div class="page-header">
+    <h1>Posts</h1>
+  </div>
 
-
-  <ul class="posts">
-    {% for post in paginator.posts %}
-    <li>
-    <div class="post-container">
+  {% for post in paginator.posts %}
+  <div class="panel panel-default">
+    <div class="panel-body">
       <div class= "text-right">
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
       </div>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <h3>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <small>{% if post.author %} {{ post.author }}{% endif %}</small>
+      </h3>
       <div class="post-content">
-        {{post.category}} 
+        {{post.category}}
         {{post.content| split:'<!--break-->' | first }}
         {% if post.content contains '<!--break-->' %}
         <a href="{{post.url}}"> read more</a>
@@ -24,34 +26,34 @@ layout: default
         <div class="addthis_sharing_toolbox"></div>
       </div>
     </div>
-    </li>
-    {% endfor %}
-  </ul>
+  </div>
+  {% endfor %}
+
+
 
   {% if paginator.total_pages > 1 %}
-  <div class="pagination">
+  <ul class="pagination">
     {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+      <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
     {% else %}
-    <span>&laquo; Prev</span>
+      <li><span>&laquo; Prev</span></li>
     {% endif %}
 
     {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-    <em>{{ page }}</em>
-    {% elsif page == 1 %}
-    <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-    {% else %}
-    <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-    {% endif %}
+      {% if page == paginator.page %}
+        <li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+      {% elsif page == 1 %}
+        <li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+      {% else %}
+        <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a</li>
+      {% endif %}
     {% endfor %}
 
     {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+      <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a</li>
     {% else %}
-    <span>Next &raquo;</span>
+    <li><span>Next &raquo;</span></li>
     {% endif %}
-  </div>
+  </ul>
   {% endif %}
 
-</div>
