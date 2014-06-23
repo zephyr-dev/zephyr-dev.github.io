@@ -5,6 +5,8 @@
 
 }
 
+
+
 .info{
   margin-top 10px;
   background-color: #fff;
@@ -14,7 +16,6 @@
 
 .post-content{
   padding: 15px;
-  border-top: 1px solid #0c8caa;
 }
 .post-date{
   width: 100px;
@@ -23,11 +24,9 @@
 }
 
 .post-container{
-  background-color: #fff;
-  padding: 10px;
-  padding-bottom: 10px;
-  margin: 20px;
+  background-color: #ffffff;
   border: 1px solid #e6e6e6;
+
 }
 .sidebar{
   margin-bottom: 10px;
@@ -38,7 +37,6 @@
 
 .post-content{
   padding: 15px;
-  border-top: 1px solid #0c8caa;
 }
 .post-date{
   width: 100px;
