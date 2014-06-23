@@ -19,9 +19,9 @@ To begin imparting knowledge on the world , follow these fun and easy steps
 3. After the first paragraph add a <!--break--> comment
   -This will truncate The post on the main page of the blog
 4. When adding code, follow this standard
-  -{% highlight ruby %}
+  - {% highlight ruby %}
   -  #Your code here
-  -{% endhighlight}
+  - {% endhighlight}
 5. When including an image, use the <img> tag
 6. Once you are done writing your post, push your file onto master and marvel at the literary masterpiece you have just created
 
