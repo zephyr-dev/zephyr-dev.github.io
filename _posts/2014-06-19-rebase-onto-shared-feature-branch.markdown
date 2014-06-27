@@ -26,7 +26,7 @@ Our usual workflow involves a feature or topic branch, from which we branch indi
 ###So what happens when we want to integrate new changes that were made on the main line?
 ![My helpful screenshot]({{ site.url }}/images/git_rebase_onto/shared_feature_setup.png)
 
-If we rebase the feature branch, we get those <span style="color:cyan">**blue**</span> commits again.
+If we rebase the feature branch, the <span style="color: rgb(153, 0, 255)">**purple**</span> commits turn into those <span style="color:cyan">**blue**</span> commits again.
 
 ![My helpful screenshot]({{ site.url }}/images/git_rebase_onto/shared_feature_setup.png)
 
