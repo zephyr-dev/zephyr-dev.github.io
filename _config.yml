@@ -1,9 +1,9 @@
 # Site settings
-title: Gust Tech Blog
+title: /tmpEST
 email: devs@gust.com
 description: Gust is a platform that connects early stage Entrepreneurs and Angel Investors.  This is the blog of the developers who work on builiding the platform.
 baseurl: ""
-url: "http://gust-tech-blog.herokuapp.com"
+url: "http://devblog.gust.com"
 paginate: 3
 highlighter: pygments
 
