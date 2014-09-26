@@ -1,7 +1,7 @@
 ---
 layout: post
 author: "Lee Ourand"
-title:  "Retrospect Yo'Self'"
+title:  "Retrospect Yo'Self"
 date:   2014-09-26 10:43:39
 tags: retrospectives process
 categories: agile
